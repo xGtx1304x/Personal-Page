@@ -7,12 +7,18 @@ body {
 }
 button {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+a img {
+  height: 40px;
+  background-color: #3d1234;
 }
 header,
 footer {
   background: #3d1234;
   color: #fff;
-  padding: 1em 2em;
+  padding: 1em 2.5em;
 }
 main {
   padding: 2em;
@@ -35,7 +41,7 @@ footer {
   text-align: center;
 }
 nav {
-  margin-left: 5%;
+  margin-right: 5%;
 }
 nav ul {
   display: flex;
@@ -86,6 +92,7 @@ nav button:hover {
     overflow: hidden;
     max-height: 0; /* oculto */
     transition: max-height 0.3s ease-out; /* animación */
+    margin: 0;
   }
   nav.active {
     max-height: 300px; /* se despliega */
