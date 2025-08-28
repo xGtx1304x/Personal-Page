@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #141414;
+  margin: 0;
+  padding: 0;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+}
+header,
+footer {
+  background: #3d1234;
+  color: #fff;
+  padding: 1em 2em;
+}
+main {
+  padding: 2em;
+  color: #fff;
+}
+header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  z-index: 10;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+nav {
+  margin-left: 5%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+nav button {
+  color: white;
+  background: transparent;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+nav button:hover {
+  background: #5B314E;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 5;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+  nav {
+    position: absolute;
+    top: 100%; /* aparece justo debajo del header */
+    right: 0;
+    width: 100%;
+    background: #3d1234;
+    overflow: hidden;
+    max-height: 0; /* oculto */
+    transition: max-height 0.3s ease-out; /* animación */
+  }
+  nav.active {
+    max-height: 300px; /* se despliega */
+    transition: max-height 0.4s ease-in-out;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    padding: 0;
+  }
+  nav button {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+  .overlay.active {
+    display: block;
+  }
+}
