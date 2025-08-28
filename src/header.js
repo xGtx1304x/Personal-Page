@@ -6,8 +6,8 @@ function Header() {
   <nav>
     <ul>
       <li><button id="Home" id="Home">Home</button></li>
-      <li><button id="About" id="About">About</button></li>
-      <li><button id="Contact" id="Contact">Contact</button></li>
+      <li><button id="About" id="About">Cursos</button></li>
+      <li><button id="Contact" id="Contact">Sobre mí</button></li>
     </ul>
   </nav>
 </header>
