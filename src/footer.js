@@ -1,6 +1,6 @@
 function Footer() {
     return `
-    <footer>&copy; 2026 Jorge. All rights reserved.</footer>
+    <footer>&copy; 2026 Jorge Duran. All rights reserved.</footer>
     `;
 }
 
